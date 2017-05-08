@@ -1,0 +1,13 @@
+package: example-golang-oauth2
+import:
+- package: github.com/astaxie/beego
+  version: ^1.8.2
+- package: golang.org/x/oauth2
+- package: google.golang.org/api
+  subpackages:
+  - oauth2/v2
+testImport:
+- package: github.com/smartystreets/goconvey
+  version: ^1.6.2
+  subpackages:
+  - convey

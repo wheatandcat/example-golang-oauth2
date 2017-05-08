@@ -1,0 +1,61 @@
+hash: baf1369929bab76b66b1225d7dbbbdc792ad53ad51e0c2934751bb90690bf003
+updated: 2017-05-09T03:14:24.738513529+09:00
+imports:
+- name: github.com/astaxie/beego
+  version: 7452151beec2f43c42122fd91b7523bcbccf05be
+  subpackages:
+  - config
+  - context
+  - grace
+  - logs
+  - session
+  - toolbox
+  - utils
+- name: github.com/golang/protobuf
+  version: 8ee79997227bf9b34611aee7946ae64735e6fd93
+  subpackages:
+  - proto
+- name: golang.org/x/net
+  version: 41bba8d80bbfab43231ffdf4c210037baae5f6a3
+  subpackages:
+  - context
+  - context/ctxhttp
+- name: golang.org/x/oauth2
+  version: 314dd2c0bf3ebd592ec0d20847d27e79d0dbe8dd
+  subpackages:
+  - internal
+- name: google.golang.org/api
+  version: c55f685368bb1cdfed2c20283e2878a83b929730
+  subpackages:
+  - gensupport
+  - googleapi
+  - googleapi/internal/uritemplates
+  - oauth2/v2
+- name: google.golang.org/appengine
+  version: 150dc57a1b433e64154302bdc40b6bb8aefa313a
+  subpackages:
+  - internal
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/remote_api
+  - internal/urlfetch
+  - urlfetch
+testImports:
+- name: github.com/gopherjs/gopherjs
+  version: 5c8f21741620ef6a52e185bbc920499581901c9e
+  subpackages:
+  - js
+- name: github.com/jtolds/gls
+  version: bb0351aa7eb6f322f32667d51375f26a2bca6628
+- name: github.com/smartystreets/assertions
+  version: 26acb9229f421449ac63d014995b282d59261a8b
+  subpackages:
+  - internal/go-render/render
+  - internal/oglematchers
+- name: github.com/smartystreets/goconvey
+  version: d4c757aa9afd1e2fc1832aaab209b5794eb336e1
+  subpackages:
+  - convey
+  - convey/gotest
+  - convey/reporting
