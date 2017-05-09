@@ -10,3 +10,4 @@
 metas/
 example-golang-oauth2
 vendor
+conf/app.conf

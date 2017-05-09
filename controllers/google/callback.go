@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 	"example-golang-oauth2/lib/google"
-	"log"
 
 	"github.com/astaxie/beego"
 	v2 "google.golang.org/api/oauth2/v2"
@@ -44,10 +43,6 @@ func (c *CallbackController) Get() {
 	service, _ := v2.New(config.Client(context, tok))
 	tokenInfo, _ := service.Tokeninfo().AccessToken(tok.AccessToken).Context(context).Do()
 
-	log.Println(service)
-	log.Println(tokenInfo.Email)
-
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "google/index.tpl"
+	c.Data["Email"] = tokenInfo.Email
+	c.TplName = "google/callback.tpl"
 }

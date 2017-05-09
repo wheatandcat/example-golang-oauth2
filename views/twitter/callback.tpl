@@ -13,26 +13,19 @@
         <br />
         <br />
         <br />
-        <div class="well">oauth2認証サンプル</div>
-        <div class="panel panel-default">
+        <div class="alert alert-success" role="alert">twitter認証成功！</div>
+        <div class="panel panel-success">
             <div class="panel-heading">
-                Googleログイン
+                情報
             </div>
             <div class="panel-body">
-                <a href="http://localhost:8080/google/oauth2">oauth2認証</a>
-            </div>
-        </div>
-        <br />
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                twitterログイン
-            </div>
-            <div class="panel-body">
-                <a href="http://localhost:8080/twitter/oauth">oauth認証</a>
+
             </div>
         </div>
         <br />
         <br />
+        <br />
+        <a href="http://localhost:8080/">戻る</a>
     </div>
 </body>
 

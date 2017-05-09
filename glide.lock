@@ -1,5 +1,5 @@
-hash: baf1369929bab76b66b1225d7dbbbdc792ad53ad51e0c2934751bb90690bf003
-updated: 2017-05-09T03:14:24.738513529+09:00
+hash: 7b44346b0ba3a5ee4b86eae398b39963bbcf4f3421ee3c1f9499462908a568d3
+updated: 2017-05-10T02:38:32.780737992+09:00
 imports:
 - name: github.com/astaxie/beego
   version: 7452151beec2f43c42122fd91b7523bcbccf05be
@@ -11,6 +11,10 @@ imports:
   - session
   - toolbox
   - utils
+- name: github.com/garyburd/go-oauth
+  version: 4f191fd0442e75c0c73bd00e4f5f27d4c08312ee
+  subpackages:
+  - oauth
 - name: github.com/golang/protobuf
   version: 8ee79997227bf9b34611aee7946ae64735e6fd93
   subpackages:
