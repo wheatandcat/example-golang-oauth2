@@ -12,7 +12,6 @@
     <div class="container">
         <br />
         <br />
-        <br />
         <div class="well">oauth2認証サンプル</div>
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -29,6 +28,15 @@
             </div>
             <div class="panel-body">
                 <a href="http://localhost:8080/twitter/oauth">oauth認証</a>
+            </div>
+        </div>
+        <br />
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                facebookログイン
+            </div>
+            <div class="panel-body">
+                <a href="http://localhost:8080/facebook/oauth2">oauth2認証</a>
             </div>
         </div>
         <br />

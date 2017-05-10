@@ -3,12 +3,16 @@ import:
 - package: github.com/astaxie/beego
   version: ^1.8.2
 - package: golang.org/x/oauth2
+  subpackages:
+  - facebook
 - package: google.golang.org/api
   subpackages:
   - oauth2/v2
 - package: github.com/garyburd/go-oauth
   subpackages:
   - oauth
+- package: github.com/huandu/facebook
+  version: ^1.8.1
 testImport:
 - package: github.com/smartystreets/goconvey
   version: ^1.6.2

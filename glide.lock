@@ -1,5 +1,5 @@
-hash: 7b44346b0ba3a5ee4b86eae398b39963bbcf4f3421ee3c1f9499462908a568d3
-updated: 2017-05-10T02:38:32.780737992+09:00
+hash: 044a96447311232b7904b66d443de26f534adbc6e36d9e97a0e6f0e8f1568be1
+updated: 2017-05-11T03:00:14.161132023+09:00
 imports:
 - name: github.com/astaxie/beego
   version: 7452151beec2f43c42122fd91b7523bcbccf05be
@@ -19,6 +19,8 @@ imports:
   version: 8ee79997227bf9b34611aee7946ae64735e6fd93
   subpackages:
   - proto
+- name: github.com/huandu/facebook
+  version: efe962f32209aa6e7430fb779bdf29bbcdb716e1
 - name: golang.org/x/net
   version: 41bba8d80bbfab43231ffdf4c210037baae5f6a3
   subpackages:
@@ -27,6 +29,7 @@ imports:
 - name: golang.org/x/oauth2
   version: 314dd2c0bf3ebd592ec0d20847d27e79d0dbe8dd
   subpackages:
+  - facebook
   - internal
 - name: google.golang.org/api
   version: c55f685368bb1cdfed2c20283e2878a83b929730

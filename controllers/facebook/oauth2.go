@@ -1,7 +1,7 @@
-package controllersGoogle
+package controllersFacebook
 
 import (
-	"example-golang-oauth2/lib/google"
+	"example-golang-oauth2/lib/facebook"
 
 	"github.com/astaxie/beego"
 )
@@ -13,7 +13,7 @@ type Oauth2Controller struct {
 
 // Get 認証する
 func (c *Oauth2Controller) Get() {
-	config := google.GetConnect()
+	config := facebook.GetConnect()
 
 	url := config.AuthCodeURL("")
 
