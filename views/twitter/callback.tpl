@@ -19,12 +19,23 @@
                 情報
             </div>
             <div class="panel-body">
-
+                <br />
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <img src="{{.ProfileImageURL}}">
+                    </li>
+                	<li class="list-group-item">
+                        ID：{{.ID}}
+                    </li>
+                    <li class="list-group-item">
+                        Name：{{.ScreenName}}
+                    </li>
+                    <li class="list-group-item">
+                        Email：{{.Email}}
+                    </li>
+                </ul>
             </div>
         </div>
-        <br />
-        <br />
-        <br />
         <a href="http://localhost:8080/">戻る</a>
     </div>
 </body>

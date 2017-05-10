@@ -43,6 +43,7 @@ func (c *CallbackController) Get() {
 	service, _ := v2.New(config.Client(context, tok))
 	tokenInfo, _ := service.Tokeninfo().AccessToken(tok.AccessToken).Context(context).Do()
 
+	c.Data["ID"] = tokenInfo.UserId
 	c.Data["Email"] = tokenInfo.Email
 	c.TplName = "google/callback.tpl"
 }

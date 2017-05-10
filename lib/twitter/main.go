@@ -2,6 +2,7 @@ package twitter
 
 import (
 	"encoding/json"
+	"net/url"
 
 	"errors"
 
@@ -16,8 +17,10 @@ var (
 
 // Account アカウント
 type Account struct {
-	ID         string `json:"id_str"`
-	ScreenName string `json:"screen_name"`
+	ID              string `json:"id_str"`
+	ScreenName      string `json:"screen_name"`
+	ProfileImageURL string `json:"profile_image_url"`
+	Email           string `json:"email"`
 }
 
 func init() {
@@ -49,7 +52,11 @@ func GetAccessToken(rt *oauth.Credentials, oauthVerifier string) (*oauth.Credent
 // GetMe 自身を取得する
 func GetMe(at *oauth.Credentials, user *Account) error {
 	oc := GetConnect()
-	resp, err := oc.Get(nil, at, "https://api.twitter.com/1.1/account/verify_credentials.json", nil)
+
+	v := url.Values{}
+	v.Set("include_email", "true")
+
+	resp, err := oc.Get(nil, at, "https://api.twitter.com/1.1/account/verify_credentials.json", v)
 	if err != nil {
 		return err
 	}
