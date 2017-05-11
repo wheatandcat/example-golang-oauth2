@@ -40,6 +40,14 @@
             </div>
         </div>
         <br />
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                githubログイン
+            </div>
+            <div class="panel-body">
+                <a href="http://localhost:8080/github/oauth2">oauth2認証</a>
+            </div>
+        </div>
         <br />
     </div>
 </body>

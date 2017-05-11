@@ -1,5 +1,5 @@
-hash: 044a96447311232b7904b66d443de26f534adbc6e36d9e97a0e6f0e8f1568be1
-updated: 2017-05-11T03:00:14.161132023+09:00
+hash: 5ab370a47f2b087b2d75278df9febe1a4ef112fc6e62e80e179550975564ff25
+updated: 2017-05-12T05:36:43.409583978+09:00
 imports:
 - name: github.com/astaxie/beego
   version: 7452151beec2f43c42122fd91b7523bcbccf05be
@@ -19,6 +19,14 @@ imports:
   version: 8ee79997227bf9b34611aee7946ae64735e6fd93
   subpackages:
   - proto
+- name: github.com/google/go-github
+  version: c03cf196876fc0b7cf8db2516848536778ea4e29
+  subpackages:
+  - github
+- name: github.com/google/go-querystring
+  version: 53e6ce116135b80d037921a7fdd5138cf32d7a8a
+  subpackages:
+  - query
 - name: github.com/huandu/facebook
   version: efe962f32209aa6e7430fb779bdf29bbcdb716e1
 - name: golang.org/x/net
@@ -30,6 +38,7 @@ imports:
   version: 314dd2c0bf3ebd592ec0d20847d27e79d0dbe8dd
   subpackages:
   - facebook
+  - github
   - internal
 - name: google.golang.org/api
   version: c55f685368bb1cdfed2c20283e2878a83b929730
@@ -42,9 +51,11 @@ imports:
   version: 150dc57a1b433e64154302bdc40b6bb8aefa313a
   subpackages:
   - internal
+  - internal/app_identity
   - internal/base
   - internal/datastore
   - internal/log
+  - internal/modules
   - internal/remote_api
   - internal/urlfetch
   - urlfetch
