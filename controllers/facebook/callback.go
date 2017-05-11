@@ -49,6 +49,8 @@ func (c *CallbackController) Get() {
 		panic(err)
 	}
 
+	c.Data["ID"] = res["id"]
+	c.Data["Name"] = res["name"]
 	c.Data["Email"] = res["email"]
 	c.TplName = "facebook/callback.tpl"
 }

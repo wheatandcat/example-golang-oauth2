@@ -22,6 +22,12 @@
                 <br />
                 <ul class="list-group">
                     <li class="list-group-item">
+                        ID：{{.ID}}
+                    </li>
+                    <li class="list-group-item">
+                        Name：{{.Name}}
+                    </li>
+                    <li class="list-group-item">
                         Email：{{.Email}}
                     </li>
                 </ul>

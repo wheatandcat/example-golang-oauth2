@@ -19,6 +19,7 @@ func GetConnect() *oauth2.Config {
 			AuthURL:  authorizeEndpoint,
 			TokenURL: tokenEndpoint,
 		},
+		Scopes:      []string{"email"},
 		RedirectURL: "http://localhost:8080/facebook/callback",
 	}
 
