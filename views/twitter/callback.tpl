@@ -33,6 +33,9 @@
                     <li class="list-group-item">
                         Email：{{.Email}}
                     </li>
+                    <li class="list-group-item">
+                        <a href="http://localhost:8080/twitter/post">テストで呟く</a>（※連携中のアカウントでAPI投稿を行います）
+                    </li>
                 </ul>
             </div>
         </div>

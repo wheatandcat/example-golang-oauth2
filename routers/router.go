@@ -15,6 +15,7 @@ func init() {
 	beego.Router("/google/callback", &controllersGoogle.CallbackController{})
 	beego.Router("/twitter/oauth", &controllersTwitter.Oauth2Controller{})
 	beego.Router("/twitter/callback", &controllersTwitter.CallbackController{})
+	beego.Router("/twitter/post", &controllersTwitter.TweetController{})
 	beego.Router("/facebook/oauth2", &controllersFacebook.Oauth2Controller{})
 	beego.Router("/facebook/callback", &controllersFacebook.CallbackController{})
 	beego.Router("/github/oauth2", &controllersGithub.Oauth2Controller{})

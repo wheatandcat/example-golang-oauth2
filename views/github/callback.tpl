@@ -30,9 +30,6 @@
                     <li class="list-group-item">
                         Name：{{.Name}}
                     </li>
-                    <li class="list-group-item">
-                        ReposURL：<a href="{{.ReposURL}}" >{{.ReposURL}}</a>
-                    </li>
                 </ul>
             </div>
         </div>

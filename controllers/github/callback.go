@@ -48,7 +48,6 @@ func (c *CallbackController) Get() {
 	c.Data["ID"] = u.GetID()
 	c.Data["AvatarURL"] = u.GetAvatarURL()
 	c.Data["Name"] = u.GetName()
-	c.Data["ReposURL"] = u.GetReposURL()
 
 	c.TplName = "github/callback.tpl"
 }

@@ -78,3 +78,20 @@ func GetMe(at *oauth.Credentials, user *Account) error {
 	return nil
 
 }
+
+// PostTweet Tweetを投稿する
+func PostTweet(at *oauth.Credentials) error {
+	oc := GetConnect()
+
+	v := url.Values{}
+	v.Set("status", "テスト投稿。APIから投稿しました。\n投稿元：https://github.com/wheatandcat/example-golang-oauth2")
+
+	resp, err := oc.Post(nil, at, "https://api.twitter.com/1.1/statuses/update.json", v)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	return nil
+
+}

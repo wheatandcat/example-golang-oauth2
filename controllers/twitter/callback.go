@@ -38,6 +38,9 @@ func (c *CallbackController) Get() {
 		panic(err)
 	}
 
+	c.CruSession.Set("oauth_secret", at.Secret)
+	c.CruSession.Set("oauth_token", at.Token)
+
 	account := twitter.Account{}
 	if err = twitter.GetMe(at, &account); err != nil {
 		panic(err)
