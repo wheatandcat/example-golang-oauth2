@@ -17,7 +17,7 @@ type CallbackController struct {
 // CallbackRequest コールバックリクエスト
 type CallbackRequest struct {
 	Code  string `form:"code"`
-	State int    `form:"state"`
+	State string `form:"state"`
 }
 
 // Get コールバックする
